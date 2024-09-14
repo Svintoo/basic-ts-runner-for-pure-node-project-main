@@ -8,10 +8,8 @@
     "moduleResolution": "nodenext",
     "target": "es6",
     "module": "nodenext",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "strictPropertyInitialization": false,
+    "lib": ["esnext", "dom"],
     "sourceMap": true,
     "declaration": true,
     "esModuleInterop": true,
@@ -21,14 +19,8 @@
     "emitDecoratorMetadata": true,
     "declarationDir": "../dist",
     "outDir": "../dist",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": [
-    "./**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
 }

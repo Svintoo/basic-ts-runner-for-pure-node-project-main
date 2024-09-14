@@ -1,4 +1,5 @@
-import prompt from './helpers/prompt.js';
+import App from "./classes/App.js";
 
-let name = prompt('Vad heter du? ');
-console.log(`Hej ${name}!`);
+//Gör så spelets körs ('node index.js' för att köra)
+const game = new App();
+game.startGameLoop();
