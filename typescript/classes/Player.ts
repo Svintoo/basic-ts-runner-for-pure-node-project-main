@@ -1,11 +1,9 @@
 import Board from "./Board.js";
-
-// difference from JS example:
-// initial preparation for computer move done
+import { getRandomInt } from "../utils/utils.js";
 
 export default class Player {
   name: string;
-  color: string;
+  symbol: string;
   board: Board;
   isComputer: boolean;
 
@@ -16,14 +14,13 @@ export default class Player {
     isComputer: boolean = false
   ) {
     this.name = name;
-    this.color = color;
+    this.symbol = color;
     this.board = board;
     this.isComputer = isComputer;
   }
 
-  makeComputerMove(): Array<number> {
-    // look at the board and calculate a move based on
-    // the curent board status
-    return [1, 1];
+  computerMove(): number {
+    let move = getRandomInt(7);
+    return move;
   }
 }
